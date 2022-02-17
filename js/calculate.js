@@ -64,6 +64,7 @@ calculateBtn.addEventListener('click', function () {
         document.getElementById('balance-text').classList.add('hidden');
         savingsAmnt.innerText=0;
         remainBalAmnt.innerText=0;
+        document.querySelector('#save-btn').disabled=true;
     }
     else if (negativeCheck(balance) == true) {
         expensesError.classList.add('hidden');
@@ -72,6 +73,7 @@ calculateBtn.addEventListener('click', function () {
         document.getElementById('balance-text').classList.add('hidden');
         savingsAmnt.innerText=0;
         remainBalAmnt.innerText=0;
+        document.querySelector('#save-btn').disabled=true;
     }
     else {
         expensesError.classList.add('hidden');
@@ -80,6 +82,7 @@ calculateBtn.addEventListener('click', function () {
         document.getElementById('balance-text').classList.remove('hidden');
         expensesAmnt.innerText = expenses;
         balanceAmnt.innerText = balance;
+        document.querySelector('#save-btn').disabled=false;
     }
 });
 
@@ -89,7 +92,7 @@ saveBtn.addEventListener('click', function () {
     savings=(savingsInput*incomeInput)/100;
     remainBalance = balance-savings;
     console.log(remainBalance);
-
+    
 
     // error check and display result
     if (savingsInput<0 || savingsInput>100) {
