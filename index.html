@@ -41,21 +41,23 @@
             <!-- total expenses and balance display section -->
             <div class="space-y-3 my-3">
                 <p id="expenses-error" class="text-red-600 font-semibold text-xl uppercase hidden text-center">all field must be contain positive number</p>
-                <p id="balance-error" class="text-red-600 font-semibold text-xl uppercase hidden text-center">expense must be less than income</p>
-                <h2 id="expense-text1" class="text-2xl font-medium text-center">Total Expenses: <span id="expenses-amnt">0</span></h2>
-                <h2 id="expense-text2" class="text-2xl font-medium text-center">Balance: <span id="balance-amnt">0</span></h2>
+                <p id="balance-error" class="text-red-600 font-semibold text-xl uppercase hidden text-center">expense must be less than the income</p>
+                <h2 id="expense-text" class="text-2xl font-medium text-center">Total Expenses: <span id="expenses-amnt">0</span></h2>
+                <h2 id="balance-text" class="text-2xl font-medium text-center">Balance: <span id="balance-amnt">0</span></h2>
             </div>
 
             <!-- savings input and calculation button -->
             <div class="flex justify-center flex-wrap items-center gap-3 my-3 text-center">
-                <span class="text-xl">Save : <input class="bg-gray-300 rounded-sm h-10 w-20 text-center" min="0" max="100" type="number" name="" id="savings-input" placeholder="Savings"> %</span>
+                <span class="text-xl">Save : <input class="bg-gray-300 rounded-sm h-10 w-[100px] text-center p-[2px]" min="0" max="100" type="number" value="0" name="" id="savings-input" placeholder="Savings"> %</span>
                 <button class="px-7 py-1.5 my-3 bg-gray-900 text-xl text-white rounded-md font-medium transform transition-transform duration-100 active:scale-95" id="save-btn">Save</button>
             </div>
 
 
             <div class="space-y-3 my-3">
-                <h2 class="text-2xl font-medium text-center">Saving Amount: <span id="savings-amnt">0</span></h2>
-                <h2 class="text-2xl font-medium text-center">Remaining Balance: <span id="remaining-bal-amnt">0</span></h2>
+                <p id="savings-error1" class="text-red-600 font-semibold text-xl uppercase text-center hidden">saving must be contain 0 to 100</p>
+                <p id="savings-error2" class="text-red-600 font-semibold text-xl uppercase text-center hidden">savings must be less than the balance</p>
+                <h2 id="savings-text1" class="text-2xl font-medium text-center">Saving Amount: <span id="savings-amnt">0</span></h2>
+                <h2 id="savings-text2" class="text-2xl font-medium text-center">Remaining Balance: <span id="remaining-bal-amnt">0</span></h2>
             </div>
         </section>
     </main>
