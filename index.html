@@ -25,14 +25,14 @@
             
             <!-- income input section -->
             <h2 class="text-2xl font-medium text-center mb-3">Income</h2>
-            <p class="text-xl max-w-[19rem] text-center lg:pr-8 sm:text-right"><span class="">Income : </span><input class="bg-gray-300 rounded-sm h-10 w-11/12 sm:w-2/3 text-center" min="0" type="number" name="" id="income-input" placeholder="Enter ur Income"></p>
+            <p class="text-xl max-w-[19rem] text-center lg:pr-8 sm:text-right"><span class="">Income : </span><input class="bg-gray-300 rounded-sm h-10 w-11/12 sm:w-2/3 text-center" min="0" type="number" name="" id="income-input" placeholder="৳ Income"></p>
 
             <!-- Expenses input sention -->
             <h2 class="text-2xl font-medium text-center my-3">Expenses</h2>
             <div class="space-y-4 max-w-[19rem] mx-auto lg:pr-8">
-                <p class="text-xl text-center sm:text-right"><span class="">Food : </span><input class="bg-gray-300 rounded-sm h-10 w-11/12 sm:w-2/3 text-center" min="0" type="number" name="" id="food-input" placeholder="Enter Food Cost"></p>
-                <p class="text-xl text-center sm:text-right"><span class="">Rent : </span><input class="bg-gray-300 rounded-sm h-10 w-11/12 sm:w-2/3 text-center" min="0" type="number" name="" id="rent-input" placeholder="Enter Rent Cost"></p>
-                <p class="text-xl text-center sm:text-right"><span class="">Clothes : </span><input class="bg-gray-300 rounded-sm h-10 w-11/12 sm:w-2/3 text-center" min="0" type="number" name="" id="clothes-input" placeholder="Enter Clothes Cost"></p>
+                <p class="text-xl text-center sm:text-right"><span class="">Food : </span><input class="bg-gray-300 rounded-sm h-10 w-11/12 sm:w-2/3 text-center" min="0" type="number" name="" id="food-input" placeholder="৳ Food Cost"></p>
+                <p class="text-xl text-center sm:text-right"><span class="">Rent : </span><input class="bg-gray-300 rounded-sm h-10 w-11/12 sm:w-2/3 text-center" min="0" type="number" name="" id="rent-input" placeholder="৳ Rent Cost"></p>
+                <p class="text-xl text-center sm:text-right"><span class="">Clothes : </span><input class="bg-gray-300 rounded-sm h-10 w-11/12 sm:w-2/3 text-center" min="0" type="number" name="" id="clothes-input" placeholder="৳ Clothes Cost"></p>
             </div>
 
             <!-- expense and balance calculation button -->
@@ -42,8 +42,8 @@
             <div class="space-y-3 my-3">
                 <p id="expenses-error" class="text-red-600 font-semibold text-xl uppercase hidden text-center">all field must be contain positive number</p>
                 <p id="balance-error" class="text-red-600 font-semibold text-xl uppercase hidden text-center">expense must be less than the income</p>
-                <h2 id="expense-text" class="text-2xl font-medium text-center">Total Expenses: <span id="expenses-amnt">0</span></h2>
-                <h2 id="balance-text" class="text-2xl font-medium text-center">Balance: <span id="balance-amnt">0</span></h2>
+                <h2 id="expense-text" class="text-2xl font-medium text-center">Total Expenses: <span id="expenses-amnt">0</span> ৳</h2>
+                <h2 id="balance-text" class="text-2xl font-medium text-center">Balance: <span id="balance-amnt">0</span> ৳</h2>
             </div>
 
             <!-- savings input and calculation button -->
@@ -55,9 +55,9 @@
 
             <div class="space-y-3 my-3">
                 <p id="savings-error1" class="text-red-600 font-semibold text-xl uppercase text-center hidden">saving must be contain 0 to 100</p>
-                <p id="savings-error2" class="text-red-600 font-semibold text-xl uppercase text-center hidden">savings must be less than the balance</p>
-                <h2 id="savings-text1" class="text-2xl font-medium text-center">Saving Amount: <span id="savings-amnt">0</span></h2>
-                <h2 id="savings-text2" class="text-2xl font-medium text-center">Remaining Balance: <span id="remaining-bal-amnt">0</span></h2>
+                <p id="savings-error2" class="text-red-600 font-semibold text-xl uppercase text-center hidden">balance is not sufficient for savings</p>
+                <h2 id="savings-text1" class="text-2xl font-medium text-center">Saving Amount: <span id="savings-amnt">0</span> ৳</h2>
+                <h2 id="savings-text2" class="text-2xl font-medium text-center">Remaining Balance: <span id="remaining-bal-amnt">0</span> ৳</h2>
             </div>
         </section>
     </main>
