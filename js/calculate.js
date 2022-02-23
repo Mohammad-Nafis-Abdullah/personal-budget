@@ -64,6 +64,8 @@ calculateBtn.addEventListener('click', function () {
         document.getElementById('balance-text').classList.add('hidden');
         savingsAmnt.innerText=0;
         remainBalAmnt.innerText=0;
+        document.querySelector('#savings-input').value='';
+        document.querySelector('#savings-input').disabled=true;
         document.querySelector('#save-btn').disabled=true;
     }
     else if (negativeCheck(balance) == true) {
@@ -73,6 +75,8 @@ calculateBtn.addEventListener('click', function () {
         document.getElementById('balance-text').classList.add('hidden');
         savingsAmnt.innerText=0;
         remainBalAmnt.innerText=0;
+        document.querySelector('#savings-input').value='';
+        document.querySelector('#savings-input').disabled=true;
         document.querySelector('#save-btn').disabled=true;
     }
     else {
@@ -82,6 +86,7 @@ calculateBtn.addEventListener('click', function () {
         document.getElementById('balance-text').classList.remove('hidden');
         expensesAmnt.innerText = expenses;
         balanceAmnt.innerText = balance;
+        document.querySelector('#savings-input').disabled=false;
         document.querySelector('#save-btn').disabled=false;
     }
 });
